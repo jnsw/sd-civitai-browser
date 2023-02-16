@@ -371,7 +371,7 @@ def on_ui_tabs():
             with gr.Column(scale=2):
                 content_type = gr.Radio(label='Content type:', choices=["Checkpoint","Hypernetwork","TextualInversion","AestheticGradient", "VAE"], value="Checkpoint", type="value")
             with gr.Column(scale=2):
-                sort_type = gr.Radio(label='Sort List by:', choices=["Newest","Most Downloaded","Highest Rated","Most Liked"], value="Newest", type="value")
+                sort_type = gr.Radio(label='Sort List by:', choices=["Newest","Most Downloaded","Highest Rated","Most Liked"], value="Most Downloaded", type="value")
             with gr.Column(scale=1):
                 show_nsfw = gr.Checkbox(label="Show NSFW", value=True)
         with gr.Row():
