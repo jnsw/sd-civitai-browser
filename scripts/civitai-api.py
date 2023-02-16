@@ -387,7 +387,7 @@ def on_ui_tabs():
             txt_list = ""
             dummy = gr.Textbox(label='Trained Tags (if any)', value=f'{txt_list}', interactive=True, lines=1)
             model_filename = gr.Dropdown(label="Model Filename", choices=[], interactive=True, value=None)
-            dl_url = gr.Textbox(label="Download Url", interactive=False, value=None)
+            dl_url = gr.Textbox(label="Download Url", interactive=True, value=None)
         with gr.Row():
             update_info = gr.Button(value='1st - Get Model Info')
             save_text = gr.Button(value="2nd - Save Text")
